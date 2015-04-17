@@ -353,6 +353,7 @@ var App = {
    */
   navigate: function(data, callback) {
     var currentIndex = this.panels.indexOf(this.currentPanel);
+    console.info(this.panels);
     this.panels.forEach(function(panel, panelIndex) {
       if ('#' + panel.fragment === data.hash) {
         this.loadPanel(panel, function() {
@@ -371,6 +372,15 @@ var App = {
             }.bind(null, this.currentPanel));
           }
           this.currentPanel = panel;
+          var id = instance.element.getAttribute('aria-labelledby');
+          var tab = document.querySelector('ul#clock-tabs #' + id);
+          if (tab && tab.getAttribute('aria-selected') !== 'true') {
+            /*var selectedTab =
+              document.querySelector('ul#clock-tabs a[aria-selected="true"]');
+            selectedTab.setAttribute('aria-selected', 'false');
+            tab.setAttribute('aria-selected', 'true');*/
+            tab.click();
+          }
           callback && callback();
         }.bind(this));
       } else {
@@ -5304,8 +5314,7 @@ define('panels/alarm/active_alarm',['require','app','alarm_database','timer','ut
    */
   function ActiveAlarm() {
     this.alertWindow = new ChildWindowManager(
-      window.location.href.slice(0, window.location.href.lastIndexOf('/')) +
-      '/onring.html');
+      window.location.origin + '/onring.html');
 
     // Handle the system's alarm event.
     navigator.mozSetMessageHandler('alarm', this.onMozAlarm.bind(this));

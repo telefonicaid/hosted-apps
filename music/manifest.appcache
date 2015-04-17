@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version Thu Apr 09 2015 09:32:18 GMT+0000 (UTC)
+# version Wed Apr 15 2015 06:50:34 GMT+0000 (UTC)
 CACHE:
 app.html
 app.json
@@ -8,12 +8,6 @@ index.html
 jsdoc.json
 manifest.sig
 manifest.webapp
-offliner-client.js
-offliner-init.js
-offliner-register.html
-offliner-register.js
-offliner-resources.js
-offliner-worker.js
 open.html
 icons/favicon.png
 icons/icon_128.png
@@ -67,14 +61,14 @@ bower_components/gaia-header/bower.json
 bower_components/gaia-header/gaia-header.js
 bower_components/gaia-header/dist/gaia-header.js
 bower_components/gaia-header/lib/font-fit.js
+bower_components/gaia-theme/bower.json
+bower_components/gaia-theme/gaia-theme.css
+bower_components/gaia-theme/lib/gaia-theme-selector.js
 bower_components/gaia-icons/bower.json
 bower_components/gaia-icons/gaia-icons-embedded.css
 bower_components/gaia-icons/gaia-icons.css
 bower_components/gaia-icons/gaia-icons.js
 bower_components/gaia-icons/fonts/gaia-icons.ttf
-bower_components/gaia-theme/bower.json
-bower_components/gaia-theme/gaia-theme.css
-bower_components/gaia-theme/lib/gaia-theme-selector.js
 js/communications.js
 js/db.js
 js/metadata_scripts.js
@@ -124,6 +118,7 @@ style/images/ui/gradient.png
 style/images/ui/pattern.png
 shared/elements/gaia_subheader/script.js
 shared/elements/gaia_subheader/style.css
+shared/locales/media/media.en-US.properties
 shared/js/accessibility_helper.js
 shared/js/async_storage.js
 shared/js/cache.js
@@ -142,7 +137,6 @@ shared/js/device_storage/get_storage_if_available.js
 shared/js/device_storage/get_unused_filename.js
 shared/js/media/remote_controls.js
 shared/js/omadrm/fl.js
-shared/locales/media/media.en-US.properties
 shared/style/confirm.css
 shared/style/input_areas.css
 shared/style/progress_activity.css
