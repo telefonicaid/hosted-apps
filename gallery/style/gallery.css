@@ -173,7 +173,7 @@ body.thumbnailListView #thumbnails-list-top {
    * the body background is black, but remind the UA of that here to
    * keep the thumbnail view opaque if possible.
    */
-  background-color: #0E1214;
+  background-color: red;
   will-change: scroll-position;
   /*
    * set it visible/hidden by LAYOUT_MODE
